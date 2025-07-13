@@ -10,10 +10,10 @@ logging.basicConfig(level=logging.INFO)
 
 # --- Load Model and Data ---
 try:
-    with open("model/recommender_model.pkl", "rb") as f:
+    with open("movie-recommender-python/model/recommender_model.pkl", "rb") as f:
         model = pickle.load(f)
 
-    with open("model/movie_map.pkl", "rb") as f:
+    with open("movie-recommender-python/model/movie_map.pkl", "rb") as f:
         movie_map = pickle.load(f)
 
     movie_ids = list(movie_map.keys())
